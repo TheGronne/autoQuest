@@ -1,0 +1,173 @@
+﻿<Window x:Class="Auto_Quest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Auto_Quest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800" ResizeMode="NoResize">
+
+    <Border BorderBrush="Black" BorderThickness="2">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150px"/>
+                <RowDefinition Height="75px"/>
+                <RowDefinition Height="75px"/>
+                <RowDefinition Height="275px"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300px"/>
+                <ColumnDefinition Width="300px"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="StoryLabel" Margin="0,0,0,125" Content="Story" FontWeight="Bold" Height="30px" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="1"/>
+            <Label x:Name="EquipmentLabel" Margin="0,0,0,125" Content="Equipment" FontWeight="Bold" Height="30px" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1"/>
+            <Label x:Name="CharacterLabel" Margin="0,0,0,125" Content="Character Panel" FontWeight="Bold" Height="30px" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1"/>
+            <Label x:Name="StatsLabel" Margin="0,0,0,50" Content="Stats" FontWeight="Bold" Height="30px" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1"/>
+            <Label x:Name="QuestsLabel" Margin="0,0,0,50" Content="Quests" FontWeight="Bold" Height="30px" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1"/>
+            <Label x:Name="InventoryLabel" Margin="0,0,0,50" Content="Inventory" FontWeight="Bold" Height="30px" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1"/>
+            <Label x:Name="SkillsLabel" Margin="0,0,0,250" Content="Skills" FontWeight="Bold" Height="30px" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1"/>
+
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Width="100px" Grid.Row="3" Grid.Column="0" Margin="200,0,0,200">
+                <Label x:Name="SkillLevelLabel" Content="Level" FontStyle="Italic"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Width="200px" Grid.Row="3" Grid.Column="0" Margin="0,0,100,200">
+                <Label x:Name="SkillNameLabel" Content="Skill" FontStyle="Italic"/>
+            </Border>
+            
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Width="100px" Grid.Row="2" Grid.Column="1" Margin="200,0,0,0">
+                <Label x:Name="IntventoryQuantityLabel" Content="Quantity" FontStyle="Italic"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Grid.Row="2" Width="200px" Grid.Column="1" Margin="0,0,100,0">
+                <Label x:Name="InventoryNameLabel" Content="Name" FontStyle="Italic" />
+            </Border>
+
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Width="200px" Grid.Row="0" Grid.Column="0" Margin="100,0,0,75">
+                <Label x:Name="CharacterValueLabel" Content="Value" FontStyle="Italic"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Grid.Row="0" Width="100px" Grid.Column="0" Margin="0,0,200,75">
+                <Label x:Name="CharacterNameLabel" Content="Name" FontStyle="Italic"/>
+            </Border>
+
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Width="100px" Grid.Row="0" Grid.Column="1" Margin="200,0,0,75">
+                <Label x:Name="EquipmentRarityLabel" Content="Rarity" FontStyle="Italic"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Gray" Height="30px" Grid.Row="0" Width="200px" Grid.Column="1" Margin="0,0,100,75">
+                <Label x:Name="EquipmentNameLabel" Content="Name" FontStyle="Italic"/>
+            </Border>
+            
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="0,25,0,0" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2">
+                <StackPanel x:Name="StoryPanel">
+                    <Label x:Name="Type1" Content="" Height="25px"/>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="0,25,0,0" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2">
+                <StackPanel x:Name="QuestPanel">
+                    <Label x:Name="Type2" Content="" Height="25px"/>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="0,53,0,0" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200px"/>
+                        <ColumnDefinition Width="50px"/>
+                    </Grid.ColumnDefinitions>
+                        
+                    <StackPanel Grid.Row="0" Grid.Column="0" x:Name="InventoryNamePanel" Margin="0,0,0,0">
+                        <Label x:Name="Gold" Content="Gold: " Height="25px"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="0" Grid.Column="1" x:Name="InventoryQuantityPanel" Margin="0,0,0,0">
+                        <Label x:Name="GoldQTY" Content="0 " Height="25px"/>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="0,53,0,0" Grid.Row="3" Grid.Column="0" Grid.RowSpan="1">
+                <StackPanel x:Name="SkillsPanel">
+                    <Label x:Name="Type4" Content="" Height="25px"/>
+                </StackPanel>
+            </ScrollViewer>
+
+            <StackPanel x:Name="StatsPanel" Margin="5,25,150,0" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
+                <Label x:Name="ATKLabel" Padding="2" Content="ATK: " Height="25px" FontSize="12"/>
+                <Label x:Name="INTLabel" Padding="2" Content="INT: " Height="25px" FontSize="12"/>
+                <Label x:Name="SPDLabel" Padding="2" Content="SPD: " Height="25px" FontSize="12"/>
+                <Label x:Name="CHALabel" Padding="2" Content="CHA: " Height="25px" FontSize="12"/>
+            </StackPanel>
+            <StackPanel x:Name="StatsPanel2" Margin="150,25,0,0" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
+                <Label x:Name="ATKSPDLabel" Padding="2" Content="ATKSPD: " Height="25px" FontSize="12"/>
+                <Label x:Name="CRITLabel" Padding="2" Content="CRIT: " Height="25px" FontSize="12"/>
+                <Label x:Name="MGCLabel" Padding="2" Content="MGC: " Height="25px" FontSize="12"/>
+                <Label x:Name="STRLabel" Padding="2" Content="STR: " Height="25px" FontSize="12"/>
+            </StackPanel>
+            
+            <StackPanel x:Name="CharacterPanel1" Margin="0,50,100,0" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1">
+                <Label x:Name="NameLabel" Content="Name: " Height="35px" FontSize="15"/>
+                <Label x:Name="ClassLabel" Content="Class: " Height="35px" FontSize="15"/>
+                <Label x:Name="LevelLabel" Content="Level: " Height="30px" FontSize="15"/>
+            </StackPanel>
+            <StackPanel x:Name="CharacterPanel2" Margin="100,50,0,0" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1">
+                <Label x:Name="NameValueLabel" Content="" Height="35px" FontSize="15"/>
+                <Label x:Name="ClassValueLabel" Content="" Height="35px" FontSize="15"/>
+                <Label x:Name="LevelValueLabel" Content="" Height="30px" FontSize="15"/>
+            </StackPanel>
+            <StackPanel x:Name="EquipmentPanel" Margin="0,50,100,0" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                <Label x:Name="Weapon" Content="Weapon: " Height="25px" FontSize="11"/>
+                <Label x:Name="Shield" Content="Shield: " Height="25px" FontSize="11"/>
+                <Label x:Name="Helm" Content="Helm: " Height="25px" FontSize="11"/>
+                <Label x:Name="Breastplate" Content="Breastplate: " Height="25px" FontSize="11"/>
+                <Label x:Name="Greaves" Content="Greaves: " Height="25px" FontSize="11"/>
+                <Label x:Name="Boots" Content="Boots: " Height="25px" FontSize="11"/>
+                <Label x:Name="Special" Content="Special: " Height="25px" FontSize="11"/>
+            </StackPanel>
+            <StackPanel x:Name="EquipmentPanel2" Margin="200,50,0,0" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+                <Label x:Name="WeaponRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="ShieldRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="HelmRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="BreastplateRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="GreavesRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="BootsRarityLabel" Content="" Height="25px" FontSize="11"/>
+                <Label x:Name="SpecialRarityLabel" Content="" Height="25px" FontSize="11"/>
+            </StackPanel>
+            
+            <StackPanel x:Name="SkillsSkillPanel" Margin="0,50,100,0" Grid.Row="3" Grid.Column="0" Grid.RowSpan="1">
+                <!--Example: <Label x:Name="Sadness" Content="Sadness" Height="35px" FontSize="15"/> -->
+            </StackPanel>
+            <StackPanel x:Name="SkillsLevelPanel" Margin="200,50,0,0" Grid.Row="3" Grid.Column="0" Grid.RowSpan="1">
+                <!--Example: <Label x:Name="SadnessLevel" Content="4" Height="35px" FontSize="15"/> -->
+            </StackPanel>
+
+            <Label x:Name="ProgressTitle" Padding="0" Content="Slaying: " Margin="10,0,0,10" Height="20px" FontSize="12" Grid.Row="4"/>
+            <ProgressBar x:Name="ProgressBar" Canvas.ZIndex="3" Minimum="0" Margin="0,20,0,0" Maximum="100" Value="0" Grid.Row="4" Grid.ColumnSpan="3"/>
+
+            <Label x:Name="ExperienceTitle" Padding="0" Content="Experience: " Margin="1,30,0,0" Height="15px" FontSize="10" Grid.Row="2"/>
+            <ProgressBar x:Name="ExperienceBar" Minimum="0" Margin="0,60,0,0" Maximum="100" Value="0" Grid.Row="2"/>
+            
+            <Label x:Name="InventoryTitle" Canvas.ZIndex="3" Padding="0" Content="Inventory Space: " Margin="1,260,0,0" Height="18px" FontSize="10" Grid.Row="3" Grid.Column="1"/>
+            <ProgressBar x:Name="InventoryBar" Minimum="0" Margin="0,0,0,23" Height="15px" Maximum="100" Value="0" Grid.Row="4" Grid.Column="1"/>
+
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="0" Grid.Row="3" Grid.RowSpan="1"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="2" Grid.Row="2" Grid.RowSpan="3"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="1" Grid.Row="2" Grid.RowSpan="3"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="0" Grid.Row="3" Grid.RowSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="0" Grid.Row="0" Grid.RowSpan="1"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"/>
+            <Border BorderThickness="1" BorderBrush="Black" 
+            Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"/>
+        </Grid>
+    </Border>
+</Window>

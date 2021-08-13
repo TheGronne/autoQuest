@@ -1,0 +1,30 @@
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\bin\Debug\Auto Quest.exe.config
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\bin\Debug\Auto Quest.exe
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\bin\Debug\Auto Quest.pdb
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\MainWindow.g.cs
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\App.g.cs
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest_MarkupCompile.cache
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest_MarkupCompile.lref
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\MainWindow.baml
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.g.resources
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto_Quest.Properties.Resources.resources
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csproj.GenerateResource.cache
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.exe
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.pdb
+C:\Users\kaspe\source\repos\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csprojAssemblyReference.cache
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\bin\Debug\Auto Quest.exe.config
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\bin\Debug\Auto Quest.exe
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\bin\Debug\Auto Quest.pdb
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csprojAssemblyReference.cache
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\MainWindow.g.cs
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\App.g.cs
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest_MarkupCompile.cache
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest_MarkupCompile.lref
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\MainWindow.baml
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.g.resources
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto_Quest.Properties.Resources.resources
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csproj.GenerateResource.cache
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.exe
+C:\Users\kaspe\Desktop\autoQuest\Auto Quest\Auto Quest\obj\Debug\Auto Quest.pdb
